@@ -13,6 +13,10 @@
 		</ProjectReference>
 	</ItemGroup>
 
+	<PropertyGroup>
+		<PostBuildEvent>"$(SolutionDir)build.py"</PostBuildEvent>
+	</PropertyGroup>
+	
 	<ItemGroup>
 	  <Compile Update="AboutForm.cs">
 	    <SubType>Form</SubType>
