@@ -43,7 +43,7 @@
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = System.Windows.Forms.View.Details;
-            listView1.SelectedIndexChanged += this.listView1_SelectedIndexChanged;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // pluginName
             // 
@@ -71,6 +71,7 @@
             ClientSize = new System.Drawing.Size(508, 357);
             Controls.Add(richTextBox1);
             Controls.Add(listView1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             Name = "AboutForm";
             Text = "About";
             ResumeLayout(false);
