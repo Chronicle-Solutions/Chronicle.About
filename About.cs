@@ -1,22 +1,17 @@
 ﻿using Chronicle.Plugins.Core;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Chronicle.About;
-
-public class About : IPlugable
+namespace Chronicle.About
 {
-    public string PluginName => "About Chronicle";
-    public string PluginDescription => "Displays the About Box for Chronicle Software";
-    public Version Version => new Version(0,0,0,2);
 
-   
-    public int Execute() {
-        AboutForm a = new();
-        a.ShowDialog();
+    public class About : IPlugable
+    {
+        public override string PluginName => "About Chronicle";
+        public override string PluginDescription => "Displays the About Box for Chronicle Software";
+        public override Version Version => new Version(0, 0, 0, 2);
 
-        return 0;
+        public override int Execute()
+        {
+            throw new NotImplementedException();
+        }
     }
-
-
-   
 }
